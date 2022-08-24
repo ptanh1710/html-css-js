@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+
+    /* color type */
+    --fire-color: #EE8130;
+    --dragon-color: #6F35FC;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 67.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    /* min-width: 500px; */
+    position: relative;
+    width: 350px;
+    padding: 3px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+.transparent {
+    background-color: aqua;
+    visibility: hidden;
+    display: none;
+}
+
+.card:hover .transparent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.8);
+    animation: scrollToBottom .3s linear;
+    align-self: normal;
+}
+
+@keyframes scrollToBottom {
+    from {
+        top: 2%;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.card__body {
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.abilities {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.abilities > .type {
+    font-size: 1.3rem;
+    margin-right: 5px;
+    border-radius: 7px;
+    text-align: center;
+    min-width: 110px;
+    width: 35%;
+}
+
+.abilities > .color-fire {
+    color: #fff;
+    background-color: var(--fire-color);
+}
+
+.abilities > .color-dragon {
+    color: #fff;
+    background-color: var(--dragon-color);
+}
+
+.transparent-content {
+    padding: 5px;
+    color: #fff;
+}
+
+.characteristics {
+    margin-top: 15px;
+}
+
+.characteristics > p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+
+.characteristics > p::first-letter {
+    text-transform: capitalize;
+}
+
+.base-stats {
+    display: flex;
+    flex-direction: column;
+    align-self: normal;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+ h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stat-name {
+    flex: 1 1 50%;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.s-point {
+    color: #fff;
+    font-weight: 600;
+}

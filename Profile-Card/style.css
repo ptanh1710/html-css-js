@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --green-color: #50c878;
+    --deft-green-color: #00853e;
+    --primary-color: #f2726a;
+    --white-color: #fff;
+    --black-color: #242628;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, var(--deft-green-color), var(--green-color));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background: var(--black-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 30px;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transform: translateY(25px);
+    overflow: hidden;
+    border: 4px solid var(--primary-color);
+    margin: 0 auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card__img:hover {
+    width: 100%;
+    height: 100%;
+    transform: unset;
+    border: none;
+    border-radius: unset;
+}
+
+.card__name {
+    margin-top: 40px;
+}
+
+.card__programmer {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card__social {
+    margin: 23px 0;
+}
+
+.card__social a {
+    color: var(--white-color);
+    margin: 0 23px;
+    font-size: 18px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card__social a:hover {
+    color: var(--primary-color);
+}
+
+.card__btn {
+    width: 130px;
+    height: 40px;
+    color: var(--white-color);
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card__btn:hover {
+    background: var(--primary-color);
+}

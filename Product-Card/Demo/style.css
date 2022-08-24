@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --green-color: #4daf54;
+    --deft-green-color: #3d8880;
+    --white-color: #fff;
+    --deft-black-color: #272d40;
+    --red-color: #ff0000;
+    --black-color: #000;
+    --light-white: #dadada;
+    --grey-color: #272d40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--green-color), var(--deft-green-color));
+    height: 90vh;
+}
+
+.card {
+    margin: 100px auto;
+    width: 320px;
+    height: 400px;
+    background-color: var(--deft-black-color);
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card__heart, .card__cart {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 25px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.card__cart {
+    left: unset;
+    right: 20px;
+}
+
+.card__img {
+    width: 90%;
+    transition: 0.5s;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .card__img{
+    transform: translateY(-90px) rotate(-20deg);
+}
+
+.card__title, .card__price {
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card__title {
+    margin-top: 50px;
+    color: var(--green-color);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.card__price {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.card:hover .card__title {
+    transform: translate(-40px, -100px);
+}
+
+.card:hover .card__price {
+    transform: translate(-130px, -100px);
+}
+
+.card__size, .card__color, .card__action {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.card__size {
+    margin-top: 100px
+}
+
+.card:hover .card__size{
+    margin-top: -60px;
+}
+
+.card:hover .card__size,
+.card:hover .card__color,
+.card:hover .card__action {
+    transition-delay: 0.2s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card__size, .card__color {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card__size span, .card__color span {
+    margin: 0 0 0 15px;
+}
+
+.card__size span {
+    background-color: var(--light-white);
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: var(--grey-color);
+}
+
+.card__color span {
+    width:18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.card__color-green {
+    background-color: var(--green-color);
+}
+
+.card__color-red {
+    background-color: var(--red-color);
+}
+
+.card__color-black {
+    background-color: var(--black-color);
+}
+
+.card__action button {
+    padding: 10px 20px; 
+    border: none;
+    outline: none;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 7px;
+    transition: 0.2s;
+}
+
+.card__action button:hover {
+    transform: scale(0.9);
+}

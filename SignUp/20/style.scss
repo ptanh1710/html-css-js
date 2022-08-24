@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 67.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    background-image: url('./images/board-chip.png');
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: rgba(239, 53, 53, 0.8);
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 350px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .btn-close {
+        position: absolute;
+        padding: 5px;
+        top: 5px;
+        right: 12px;
+        color: rgba(151, 151, 151, 0.83);
+        cursor: pointer;
+
+        i {
+            font-size: 1.6rem;
+        }
+    }
+
+    .btn-close:hover {
+        color: rgba(151, 151, 151, 1);
+        transition: all .2s linear;
+    }
+
+    .avatar {
+        background-color: rgba(151, 151, 151, 1);
+        padding: 15px;
+        border-radius: 50%;
+    }
+
+    h3 {
+        font-size: 2rem;
+        width: 80%;
+        margin-top: 15px;
+    }
+    
+    p {
+        font-size: 1.3rem;
+        color: rgb(121, 120, 120);
+        margin-bottom: 15px;
+    }
+
+    
+}
+
+.signup {
+    width: 100%;
+    // padding: 5px 0;
+    // margin-bottom: 5px;
+    // border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+
+    &__link {
+        width: 100%;
+        padding: 8px 0;
+        margin-bottom: 10px;
+        border: 1px solid #333;
+        border-radius: 25px;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.4rem;
+        
+        i {
+            color: #0000ff;
+        }
+    }
+
+    &__link:first-child {
+        background-color: #000;
+        color: #fff;
+    }
+
+    &__link:last-child {
+        i {
+           color: #ff0000;
+        }
+    }
+
+    &__link:hover{
+        opacity: 0.85;
+        border-color: #ff0000;
+    }
+}
+
+.privacy {
+    margin: 10px 0;
+    p {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+}
+.underline {
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login {
+    margin-top: 10px;
+
+    h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
+
