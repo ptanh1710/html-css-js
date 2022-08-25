@@ -21,23 +21,28 @@ body {
     text-rendering: optimizeSpeed;
 }
 
-.text-bold {
+.text-bold, .s-point {
     color: #000;
     font-weight: 500;
 }
 
 .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .card {
     width: 100rem;
-    
+    margin-top: 25px;
+    padding: 2%;
+    box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.55);
+
     &__back {
         position: relative;
         padding: 15px 0;
@@ -82,6 +87,7 @@ body {
         width: 600px;
         flex: 1;
         img {
+            max-width: 500px;
             width: 100%;
             height: auto;
             object-fit: cover;
@@ -155,3 +161,80 @@ body {
     color: #fff;
     background-color: #6F35FC;
 }
+
+.box {
+    width: 1600px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #A98FF3;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+    &__item {
+        flex: 1;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #e1e1e1;
+        
+
+        &-introduce {
+            display: flex;
+            justify-content: space-between;
+            height: 300px;
+
+            img {
+                width: 350px;
+                background: #000;
+            }
+        }
+
+
+        &-img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &-content {
+            flex: 1;
+            padding: 0 1rem;
+        }
+
+        &-specifications {
+            margin-top: 7px;
+
+            .stat {
+                display: flex;
+                flex-wrap: wrap;
+                
+                
+                &-name {
+                    flex: 1 1 50%;
+                }
+            }
+        }   
+    }
+}
+
+.characteristics  {
+
+    line-height: 1.8;
+    margin-top: 0;
+
+    h4 {
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .p-first {
+        display: inline-block;
+    }
+
+    p:first-letter {
+        text-transform: capitalize;
+        color: #333
+    }
+}
+
