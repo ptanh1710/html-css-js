@@ -1,0 +1,54 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    },
+
+    "courses": [
+        {
+            "id": 1,
+            "name": "Javascript",
+            "slug": "javascript",
+            "category": "Front End",
+            "category-slug": "front-end",
+            "coin": 250
+        },
+        {
+            "id": 2,
+            "name": "PHP",
+            "slug": "php",
+            "category": "Back End",
+            "category-slug": "back-end",
+            "coin": 200
+        },
+        {
+            "id": 3,
+            "name": "React JS",
+            "slug": "react-js",
+            "category": "Front End",
+            "category-slug": "front-end",
+            "coin": 300
+        },
+        {
+            "id": 4,
+            "name": "Ruby",
+            "slug": "ruby",
+            "category": "Back End",
+            "category-slug": "ack-end",
+            "coin": 350
+        }
+    ]
+}
