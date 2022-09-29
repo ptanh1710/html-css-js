@@ -32,5 +32,68 @@
             "category-slug": "ack-end",
             "coin": 350
         }
+    ],
+
+    "musics": [
+        {
+            "name": "Alone",
+            "singer": "Alan Walker",
+            "path": "./assets/music/Alone - Alan Walker_ Noonie Bao.mp3",
+            "image": "./assets/image/alan-walker.jpg"
+        },
+        {
+            "name": "Despacito",
+            "singer": "Mandarin, Luis Fonsi",
+            "path": "./assets/music/Despacito-Mandarin-Version-Luis-Fonsi.mp3",
+            "image": "./assets/image/Despacito_cover.jpeg"
+        },
+        {
+            "name": "Face",
+            "singer": "Nu\"est",
+            "path": "./assets/music/Face - NU_EST.mp3",
+            "image": "./assets/music/Face - NU_EST.mp3"
+        },
+        {
+            "name": "Faded",
+            "singer": "Alan Walker",
+            "path": "./assets/music/Faded - Alan Walker.mp3",
+            "image": "./assets/image/alan-walker.jpg"
+        },
+        {
+            "name": "Fantastic Baby",
+            "singer": "Big Bang",
+            "path": "./assets/music/Fantastic Baby - Big Bang.mp3",
+            "image": "./assets/image/big-bang.jpg"
+        },
+        {
+            "name": "Gurenge",
+            "singer": "Lisa",
+            "path": "./assets/music/Gurenge - LiSA.mp3",
+            "image": "./assets/image/gurenge.jpg"
+        },
+        {
+            "name": "Rising Hope",
+            "singer": "Lisa",
+            "path": "./assets/music/Rising Hope - LiSA.mp3",
+            "image": "./assets/image/rising-hope.jpg"
+        },
+        {
+            "name": "The Boys",
+            "singer": "SNSD",
+            "path": "./assets/music/The Boys - Girls_ Generation.mp3",
+            "image": "./assets/image/snsd.jpg"
+        },
+        {
+            "name": "Toward The Truth",
+            "singer": "FriSide",
+            "path": "./assets/music/TwoSoulsTowardTheTruth-Fripside-4248246.mp3",
+            "image": "./assets/image/toward-the-truth.jpg"
+        },
+        {
+            "name": "Yoru ni Kakeru",
+            "singer": "Yoasobi",
+            "path": "./assets/music/Yoru Ni Kakeru - YOASOBI.mp3",
+            "image": "./assets/image/yoru-ni-kakeru.jpg"
+        }
     ]
 }

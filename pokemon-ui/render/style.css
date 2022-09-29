@@ -1,0 +1,16 @@
+.type {
+    width: 100%;
+}
+
+.type span {
+    background-color: var(--color-type);
+    color: #fff;
+    float: left;
+    width: 38.4375%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    margin-left: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
